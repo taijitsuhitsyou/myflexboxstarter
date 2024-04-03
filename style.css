@@ -1,3 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
 }
@@ -25,3 +31,16 @@ article {
 }
 
 /* Add your flexbox CSS below here */
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 1 200px;
+  /* Width restriction */
+}
+
+article:nth-of-type(2) {
+  flex: 2 200px;
+}
